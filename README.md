@@ -1,5 +1,7 @@
 # React Starter
 
+## [Preview Site](https://txzy2.github.io/react-starter/)
+
 A simple, modern, and responsive clock application built with React, Vite, and TypeScript. It leverages tools like TailwindCSS, Framer Motion for animations, and Lucide Icons for a clean and interactive UI.
 
 ## Features

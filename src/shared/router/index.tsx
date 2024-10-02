@@ -11,12 +11,12 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <App />,
+        element: <App />
       },
       {
         path: 'about',
-        element: <About />,
-      },
-    ],
-  },
+        element: <About />
+      }
+    ]
+  }
 ]);

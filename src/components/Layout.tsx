@@ -1,9 +1,9 @@
-import React, {useEffect, useState} from 'react';
-import {Outlet} from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Outlet } from 'react-router-dom';
 
-// import {Header} from '@/components';
-import {Loader} from './ui';
-import {FadeIn, Hover} from '@/shared/animations';
+import { Header } from '@/components';
+import { Loader } from '@/shared/ui';
+import { FadeIn, Hover } from '@/shared/animations';
 
 const Layout: React.FC = () => {
   const [loader, setLoader] = useState(true);
@@ -22,7 +22,7 @@ const Layout: React.FC = () => {
         <Loader
           className='h-screen flex items-center justify-center gap-1'
           iconSize={25}
-          title={{need: true, text: 'Created by'}}
+          title={{ need: true, text: 'Created by' }}
           sub={true}
         />
       </FadeIn>
@@ -31,7 +31,7 @@ const Layout: React.FC = () => {
 
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <Outlet />
       <footer className='h-[5vh] text-[13px] flex items-center justify-center'>
         <code>

@@ -1,19 +1,19 @@
 import React from 'react';
-import {FadeIn, Hover, LeftToRight} from '@/shared/animations';
-import {Link} from 'react-router-dom';
-import {HouseIcon} from 'lucide-react';
+import { FadeIn, Hover, LeftToRight } from '@/shared/animations';
+import { Link } from 'react-router-dom';
+import { HouseIcon } from 'lucide-react';
 
-const list: {title: string; link: string}[] = [
-  {title: 'Vite', link: 'https://vitejs.dev'},
-  {title: 'Typescript', link: 'https://www.typescriptlang.org'},
-  {title: 'Tailwind', link: 'https://tailwindcss.com'},
-  {title: 'FramerMotion', link: 'https://www.framer.com/motion/'},
-  {title: 'LucideIcons', link: 'https://lucide.dev'}
+const list: { title: string; link: string }[] = [
+  { title: 'Vite', link: 'https://vitejs.dev' },
+  { title: 'Typescript', link: 'https://www.typescriptlang.org' },
+  { title: 'Tailwind', link: 'https://tailwindcss.com' },
+  { title: 'FramerMotion', link: 'https://www.framer.com/motion/' },
+  { title: 'LucideIcons', link: 'https://lucide.dev' }
 ];
 
 const About: React.FC = () => {
   return (
-    <FadeIn className='h-[95vh] flex flex-col items-center justify-center'>
+    <FadeIn className='h-[85vh] flex flex-col items-center justify-center'>
       <div className='flex items-center gap-4'>
         <div className='flex items-center gap-1'>
           <code className='font-bold'> Simple</code>
@@ -40,7 +40,7 @@ const About: React.FC = () => {
 
         <div className='border-s-2 border-black px-2'>
           <ul>
-            {list.map(({title, link}, i) => (
+            {list.map(({ title, link }, i) => (
               <LeftToRight delay={1 + i * 0.1}>
                 <li key={i} className='flex'>
                   -

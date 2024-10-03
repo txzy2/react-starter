@@ -1,11 +1,11 @@
-import {Hover, FadeIn, LeftToRight} from '@/shared/animations';
-import {BookCopy} from 'lucide-react';
+import { Hover, FadeIn, LeftToRight } from '@/shared/animations';
+import { BookCopy } from 'lucide-react';
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Main: React.FC = () => {
   return (
-    <div className='h-[95vh] flex flex-col justify-center items-center gap-2'>
+    <div className='h-[85vh] flex flex-col justify-center items-center gap-2'>
       <div className='flex flex-col items-center gap-2'>
         <div className='flex items-center gap-2'>
           <FadeIn delay={1}>
@@ -39,7 +39,7 @@ const Main: React.FC = () => {
       <LeftToRight>
         <Link to='/about'>
           <Hover>
-            <code className='flex items-center gap-1 underline'>
+            <code className='flex items-center gap-1 font-bold underline'>
               <BookCopy /> About
             </code>
           </Hover>

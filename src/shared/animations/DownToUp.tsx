@@ -11,18 +11,22 @@ import {motion} from 'framer-motion';
  * @returns {JSX.Element} An animated element wrapping the child elements.
  */
 
-interface FadeInProps {
+interface DownToUpProps {
   children: ReactNode;
   className?: string;
   delay?: number;
 }
 
-const FadeIn: React.FC<FadeInProps> = ({children, className, delay = 0.5}) => {
+const DownToUp: React.FC<DownToUpProps> = ({
+  children,
+  className,
+  delay = 0.5
+}) => {
   return (
     <motion.div
       className={className}
-      initial={{opacity: 0, scale: 0.5}}
-      animate={{opacity: 1, scale: 1}}
+      initial={{opacity: 0, y: 50}}
+      animate={{opacity: 1, y: 0}}
       transition={{
         duration: 1.5,
         delay,
@@ -34,4 +38,4 @@ const FadeIn: React.FC<FadeInProps> = ({children, className, delay = 0.5}) => {
   );
 };
 
-export default FadeIn;
+export default DownToUp;

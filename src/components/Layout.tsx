@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import { Outlet } from 'react-router-dom';
+import React, {useEffect, useState} from 'react';
+import {Outlet} from 'react-router-dom';
 
-import { Header } from '@/components';
-import { Loader } from '@/shared/ui';
-import { FadeIn, Hover } from '@/shared/animations';
+import {Header} from '@/components';
+import {Loader} from '@/shared/ui';
+import {DownToUp, FadeIn, Hover} from '@/shared/animations';
+import {ArrowRight} from 'lucide-react';
 
 const Layout: React.FC = () => {
   const [loader, setLoader] = useState(true);
@@ -22,7 +23,7 @@ const Layout: React.FC = () => {
         <Loader
           className='h-screen flex items-center justify-center gap-1'
           iconSize={25}
-          title={{ need: true, text: 'Created by' }}
+          title={{need: true, text: 'Created by'}}
           sub={true}
         />
       </FadeIn>
@@ -31,20 +32,34 @@ const Layout: React.FC = () => {
 
   return (
     <>
-      <Header />
+      <header>
+        <Header />
+      </header>
+
       <Outlet />
-      <footer className='h-[5vh] text-[13px] flex items-center justify-center'>
-        <code>
-          <Hover>
-            <a
-              className='font-bold hover:underline'
-              href='https://github.com/txzy2/react-starter'
-              target='_blank'
-            >
-              Github
-            </a>
-          </Hover>
-        </code>
+      <footer>
+        <DownToUp className='h-[5vh] text-[13px] flex items-center justify-center gap-1'>
+          <div className='flex items-center gap-1'>
+            created by
+            <FadeIn delay={1.5}>
+              <span className='font-bold text-orange-400'>txzy</span>
+            </FadeIn>
+          </div>
+
+          <ArrowRight size={16} />
+
+          <code>
+            <Hover>
+              <a
+                className='font-bold text-[14px] hover:underline'
+                href='https://github.com/txzy2/react-starter'
+                target='_blank'
+              >
+                Github
+              </a>
+            </Hover>
+          </code>
+        </DownToUp>
       </footer>
     </>
   );

@@ -1,7 +1,7 @@
-import { Hover, FadeIn, LeftToRight } from '@/shared/animations';
-import { BookCopy } from 'lucide-react';
+import {Hover, FadeIn, LeftToRight} from '@/shared/animations';
+import {BookCopy} from 'lucide-react';
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 const Main: React.FC = () => {
   return (

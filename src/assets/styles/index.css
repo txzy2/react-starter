@@ -5,14 +5,14 @@
 :root {
   /* color-scheme: light dark; */
 
-  --color-bg: linear-gradient(60deg, #f5f5dc 45%, #cccccc 55%);
+  --color-bg: #f5f5dc;
   --color-text: #333;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: linear-gradient(60deg, #1a1a1a 45%, #2b2b2b 55%);
-    --color-text: #fff;
+    --color-bg: #2b2b2b;
+    --color-text: #f5f5dc;
   }
 }
 
@@ -24,13 +24,10 @@ body {
 
   font-family: 'Nunito', sans-serif;
 
-  background: var(--color-bg);
+  background: #2b2b2b;
   color: var(--color-text);
 
   transition: background 1.5s ease-in-out, color 1.5s ease-in-out;
-}
-
-header {
 }
 
 a {

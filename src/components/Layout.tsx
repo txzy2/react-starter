@@ -3,7 +3,7 @@ import {Outlet} from 'react-router-dom';
 
 import {Header} from '@/components';
 import {Loader} from '@/shared/ui';
-import {DownToUp, FadeIn, Hover} from '@/shared/animations';
+import {DownToUp, FadeIn, Hover, FallingStars} from '@/shared/animations';
 import {ArrowRight} from 'lucide-react';
 
 const Layout: React.FC = () => {
@@ -36,7 +36,9 @@ const Layout: React.FC = () => {
         <Header />
       </header>
 
+      <FallingStars />
       <Outlet />
+
       <footer>
         <DownToUp className='h-[5vh] text-[13px] flex items-center justify-center gap-1'>
           <div className='flex items-center gap-1'>

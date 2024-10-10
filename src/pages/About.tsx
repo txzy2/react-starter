@@ -14,7 +14,7 @@ const list: {title: string; link: string}[] = [
 const About: React.FC = () => {
   return (
     <FadeIn className='h-[85vh] flex flex-col items-center justify-center'>
-      <div className='flex items-center gap-4'>
+      <div className='flex items-center gap-4 about'>
         <div className='flex items-center gap-1'>
           <code className='font-bold'> Simple</code>
 
@@ -27,7 +27,7 @@ const About: React.FC = () => {
             <Hover>
               <code>
                 <a
-                  className='flex items-center gap-1 font-bold  underline'
+                  className='flex items-center gap-1 font-bold underline'
                   href='https://react.dev'
                 >
                   <img src='/react.svg' width={25} alt='logo' />
@@ -38,7 +38,7 @@ const About: React.FC = () => {
           </FadeIn>
         </div>
 
-        <div className='border-s-2 border-black px-2'>
+        <div className='border-s-2 border-black px-2 about__border'>
           <ul>
             {list.map(({title, link}, i) => (
               <LeftToRight delay={1 + i * 0.1}>

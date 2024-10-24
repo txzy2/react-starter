@@ -1,4 +1,4 @@
-import {Hover, FadeIn, LeftToRight} from '@/shared/animations';
+import {Hover, FadeIn, DownToUp} from '@/shared/animations';
 import {BookCopy} from 'lucide-react';
 import React from 'react';
 import {Link} from 'react-router-dom';
@@ -36,7 +36,7 @@ const Main: React.FC = () => {
         </div>
       </div>
 
-      <LeftToRight>
+      <DownToUp delay={1.5}>
         <Link to='/about'>
           <Hover>
             <code className='flex items-center gap-1 font-bold underline'>
@@ -44,7 +44,7 @@ const Main: React.FC = () => {
             </code>
           </Hover>
         </Link>
-      </LeftToRight>
+      </DownToUp>
     </div>
   );
 };

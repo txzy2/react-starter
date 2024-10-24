@@ -29,6 +29,7 @@ const About: React.FC = () => {
                 <a
                   className='flex items-center gap-1 font-bold underline'
                   href='https://react.dev'
+                  target='_blank'
                 >
                   <img src='/react.svg' width={25} alt='logo' />
                   React

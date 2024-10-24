@@ -23,7 +23,9 @@ const LoaderComponent: React.FC<LoaderProps> = props => {
         {props.title.need && (
           <FadeIn delay={1}>
             <h3
-              className={`text-[${props.title.size ? props.title.size : 16}px] `}
+              className={`text-[${
+                props.title.size ? props.title.size : 16
+              }px] `}
             >
               {props.title.text || 'Loading...'}
             </h3>

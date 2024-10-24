@@ -4,6 +4,8 @@
 
 A simple, modern, and responsive clock application built with React, Vite, and TypeScript. It leverages tools like TailwindCSS, Framer Motion for animations, and Lucide Icons for a clean and interactive UI.
 
+![Screen](./public/Screenshot.png)
+
 ## Features
 
 - ⚡ **Vite** for fast build and development

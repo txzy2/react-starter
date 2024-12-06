@@ -6,6 +6,14 @@ import {Loader} from '@/shared/ui';
 import {FadeIn, Hover, LeftToRight} from '@/shared/animations';
 import {ArrowRight} from 'lucide-react';
 
+/**
+ * The Layout component serves as the main structure of the application.
+ * It initially displays a loading screen with an animated loader for 4 seconds,
+ * after which it reveals the main content including a header, outlet for nested routes,
+ * and a footer with creator information and a link to the GitHub repository.
+ *
+ * @returns {JSX.Element} The rendered Layout component.
+ */
 const Layout: React.FC = () => {
   const [loader, setLoader] = useState(true);
 
@@ -22,6 +30,7 @@ const Layout: React.FC = () => {
       <FadeIn>
         <Loader
           className='h-screen flex items-center justify-center gap-1'
+          needSpin={false}
           iconSize={25}
           title={{need: true, text: 'Created by'}}
           sub={true}

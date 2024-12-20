@@ -1,4 +1,4 @@
-import {Hover, FadeIn, DownToUp} from '@/shared/animations';
+import {Hover, FadeIn, DownToUp, Rotete} from '@/shared/animations';
 import {BookCopy} from 'lucide-react';
 import React from 'react';
 import {Link} from 'react-router-dom';
@@ -14,7 +14,9 @@ const Main: React.FC = () => {
                 className='cursor-pointer flex items-center gap-2 '
                 scale={1.05}
               >
-                <img src='/vite.svg' width={60} alt='logo1' />
+                <Rotete delay={0.7}> 
+                  <img src='/vite.svg' width={60} alt='logo1' />
+                </Rotete>
                 <code className='px-2 font-bold border rounded-lg'>Vite</code>
               </Hover>
             </a>
@@ -28,7 +30,9 @@ const Main: React.FC = () => {
                 className='cursor-pointer flex items-center gap-2 '
                 scale={1.05}
               >
-                <img src='/react.svg' width={60} alt='logo2' />
+                <Rotete delay={1}> 
+                  <img src='/react.svg' width={60} alt='logo2' />
+                </Rotete>
                 <code className='px-2 font-bold border rounded-lg'>React</code>
               </Hover>
             </a>
